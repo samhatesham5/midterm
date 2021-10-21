@@ -1,0 +1,238 @@
+/**Applying Fonts**/
+
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&family=Frijole&family=Rock+Salt&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  color: white;
+  font-size: 24px;
+  font-family: 'Crimson Text', serif;
+  background-color: black;
+}
+
+/**Working on header**/
+.header {
+  display: flex;
+  background-image: url('https://github.com/samhatesham5/firstsite2021/blob/main/mega-gif.gif?raw=true');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Rock Salt', cursive;
+  overflow: hidden;
+}
+
+/**note to self, use margins to seperate content in flex box when you can't use order**/
+
+.navBar {
+  margin-right: auto;
+  margin-bottom: 400px;
+  padding: 10px;
+}
+
+a, a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+.navBar > a:hover {
+  color: #E1AD01;
+}
+
+.headerTitle {
+  margin-right: auto;
+  text-align: center;
+  font-size: .7rem;
+  margin-left: auto;
+}
+
+
+h1 {
+  font-size: 4rem;
+  font-family: 'Frijole', cursive;
+  color: #a93725;
+}
+/**find a better white**/
+
+/**Date Rotated**/
+.dateDrop {
+  transform: rotate(90deg);
+  font-size: .7rem;
+  margin-top: 300px;
+  padding-left: 5px;
+}
+
+/**About Me Section**/
+
+.aboutSection {
+  display: flex;
+  height: 105vh;
+  width: 100%;
+  background-image: url('https://static.wixstatic.com/media/42db64_7cf64333ca974da9bffb9d5aa76d6415~mv2.gif');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+  overflow: hidden;
+}
+
+.clayOne {
+  width: 400px;
+  padding: 20px;
+  height: 400px;
+}
+
+.container {
+  font-size: .8rem;
+  padding: 15px;
+}
+
+.aboutHeader {
+  font-size: 1rem;
+  font-family: 'Rock Salt', cursive;
+  color: white;
+  text-align: center;
+}
+
+/**Music Section**/
+.musicSection {
+  display: flex;
+  height: 50vh;
+  width: 100%;
+  background-image: url('https://static.wixstatic.com/media/42db64_7cf64333ca974da9bffb9d5aa76d6415~mv2.gif');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+  gap: 64px;
+  overflow: hidden;
+  font-family: 'Crimson Text', serif;
+}
+
+
+/**Styling singles*/
+
+.singleOne {
+  background-image: url('https://i.pinimg.com/564x/42/6e/0e/426e0e24d359c052c6fcc23054215eae.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.singleTwo {
+  background-image: url('https://i.pinimg.com/564x/1a/b5/1f/1ab51ffab7ebfd6239d1fb51581ae9d6.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.singleThree {
+  background-image: url('https://i.pinimg.com/564x/cd/1e/2e/cd1e2ef687736126739a1215c6dd8174.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.musicSection > div {
+  width: 200px;
+  height: 200px;
+}
+/**Setting opacity to 0 makes everything within that container "invisible"**/
+.containerMusic, .containerAlbum {
+  opacity: 0;
+  transition: .5;
+}
+
+.singleOne:hover .containerMusic{
+  opacity: 1;
+}
+
+.singleTwo:hover .containerMusic{
+  opacity: 1;
+}
+
+.singleThree:hover .containerMusic{
+  opacity: 1;
+}
+
+
+.text {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  text-align: center;
+}
+
+.singleHeader {
+  text-align: center;
+  background-image: url('https://static.wixstatic.com/media/42db64_7cf64333ca974da9bffb9d5aa76d6415~mv2.gif');
+  font-family: 'Rock Salt', cursive;
+  font-size: 1.5rem;
+}
+
+#music, .clayText{
+  color: #c1bbbc;
+}
+
+/**Making a seperate parent for the spotify widget**/
+.spotifySection {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  background-image: url('https://static.wixstatic.com/media/42db64_7cf64333ca974da9bffb9d5aa76d6415~mv2.gif');
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.checkOut {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family: 'Rock Salt', cursive;
+  font-size: .9rem;
+  color: #E1AD01;
+}
+
+iframe {
+  width: 300px;
+
+}
+
+.albumCover {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 30px;
+  background-image: url('images/clay-album.png');
+}
+
+/**
+
+.albumCover > .containerAlbum {
+  color: black;
+}
+
+.containerAlbum:hover {
+  opacity: 1;
+  background-image: url('#');
+}
+
+**/
+
+/** Footer **/
+
+footer {
+  padding: 10px; 
+  font-size: .5rem;
+  text-align: center;
+}
