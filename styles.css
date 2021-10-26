@@ -91,7 +91,7 @@ h1 {
 }
 
 .container {
-  font-size: .8rem;
+  font-size: 1rem;
   padding: 15px;
 }
 
@@ -236,7 +236,7 @@ iframe {
 
 footer {
   padding: 10px;
-  font-size: .5rem;
+  font-size: .7rem;
   text-align: center;
 }
 
@@ -250,6 +250,7 @@ footer {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  object-fit: cover;
 }
 
 .lake {
@@ -260,5 +261,5 @@ footer {
 
 .clayHometown, .afterContent {
   text-align: center;
-  font-size: .7rem;
+  font-size: .8rem;
 }
